@@ -1,0 +1,109 @@
+.header {
+  height: 599px;
+  background: linear-gradient(
+      0deg,
+      rgba(138, 123, 96, 0.67) 0%,
+      rgba(138, 123, 96, 0.67) 100%
+    ),
+    url("../images/back-header.webp");
+  background-color: lightgray;
+  background-position: 0px -59.125px;
+  background-size: 100% 110.171%;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 116px;
+  position: relative;
+  max-width: 1250px;
+  width: 100%;
+
+  @media (max-width: 1339px) {
+    background-position: 50%;
+    background-size: cover;
+    gap: 135px;
+    padding-left: 40px;
+  }
+
+  @media (max-width: 1019px) {
+    gap: 54.58px;
+    padding-left: 0;
+    align-items: center;
+    height: 314px;
+  }
+
+  @media (max-width: 699px) {
+    height: 352px;
+  }
+
+  &__logo {
+    width: 267px;
+    padding: 36px 11px;
+    background-color: #0a398a;
+    @media (max-width: 1339px) {
+      margin-left: 20px;
+    }
+    @media (max-width: 1019px) {
+      margin-left: 0px;
+      width: 167px;
+      padding: 22.5px 6.88px;
+    }
+  }
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 550px;
+
+    @media (max-width: 1339px) {
+      gap: 28px;
+    }
+    @media (max-width: 1019px) {
+      gap: 20px;
+      align-items: center;
+      max-width: 322px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 72px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 80px;
+      text-transform: uppercase;
+      @media (max-width: 1019px) {
+        font-size: 36px;
+        line-height: 40px;
+      }
+      @media (max-width: 699px) {
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+    p {
+      color: #fff;
+      font-family: Arial;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      @media (max-width: 1019px) {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &__img-box {
+    position: absolute;
+    top: 329px;
+    right: 0px;
+    width: 363px;
+    height: 368px;
+    @media (max-width: 1339px) {
+      display: none;
+    }
+  }
+}
