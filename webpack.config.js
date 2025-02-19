@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js", // Итоговый JS-файл
-    clean: true, // Очистка dist перед сборкой
+    publicPath: "",
   },
   mode: "development", // 'production' для финальной сборки
   devServer: {
